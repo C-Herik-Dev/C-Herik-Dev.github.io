@@ -13,21 +13,21 @@
     <aside class="menu white-bg">
         <div class="menu-content main-content">
             <h1 class="">
-                <a onclick="getElementById('close-menu').checked = false;"href="#home" style="color: #0A1128;">LOGO</a>
+                <a onclick="getElementById('close-menu').checked = false; "href="#home" style="color: #0A1128;">LOGO</a>
             </h1>
             <nav>
                 <ul onclick="getElementById('close-menu').checked = false;">
                     <li>
-                        <a href="#intro">introdução</a>
+                        <a href="#home">introdução</a>
                     </li>
                     <li>
-                        <a href="#grid-one">top 3</a>
-                    </li>
-                    <li>
-                        <a href="#gallery">galeria</a>
+                        <a href="#grid-one">informação</a>
                     </li>
                     <li>
                         <a href="#grid-two">trabalhos</a>
+                    </li>
+                    <li>
+                        <a href="#gallery">galeria</a>
                     </li>
                     <li>
                         <a href="#contact">contato</a>
@@ -39,10 +39,10 @@
 
     <div class="menu-spacing"></div>
 
-    <section id="home" class="main-bg section">
+    <section id="home" class="intro main-bg section">
         <header>
-            <div class="main-content">
-            <div class="">
+            <div class="main-content intro-content">
+            <div class="intro-text-content">
                 <h2>Firefox 85</h2>
                 <p>
                 "To wrap up, we are proud to bring you the release of Firefox 85. In this version we are bringing you support for the :focus-visible pseudo-class in CSS and associateddevtools,
@@ -50,25 +50,31 @@
                 </p>
             </div>
         
-            <div class="">
+            <div class="intro-img">
                 <img src="assets/img/javascript.svg.svg" alt="Logo de HTML, CSS e JS">
             </div>
         </div>
         </header>
     </section>
 
-    <section id="intro" class="white-bg section">
-        <div>
-            <h2>news coverage and some surprises</h2>
+    <section id="grid-one" class="white-bg section">
+        <div class=" main-content info-content">
+            <h2>News coverage</h2>
                 <p>
                     The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and some
                     surprises at the machine’s performance. This post details some background information on the experience of
                     porting Firefox to run natively on these CPUs.
-                </p>
+                </p> 
+
+                <br>
+
                 <p>
                     We’ll start with some background on the Mac transition and give an overview of Firefox internals that needed to
                     know about the new architecture, before moving on to the concept of Universal Binaries.
-                </p>
+                </p> 
+
+                <br>
+
                 <p>
                     We’ll then explain how DRM/EME works on the new platform, talk about our experience with macOS Big Sur, and
                     discuss various updater problems we had to deal with. We’ll conclude with the release and an overview of various
@@ -78,24 +84,34 @@
     </section>
 
 
-    <section id="grid-one" class="main-bg section">
-        <div class="main-content">
-            <h2>My Grid</h2>
-            <p>Uma breve descrição</p>
-
+    <section id="grid-two" class="trabalhos-content main-bg section">
+        <div class="main-content work-content">
+            <h2 class="grid-title">My Works</h2>
+            <p class="grid-description">Description</p>
+            <br>
             <div class="grid">
                 <article>
-                    <h3>Teste 1</h3>
+                    <h3>A good one</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis officia labore, fuga praesentium sunt quo accusamus itaque porro, alias dolore inventore animi ipsum architecto illum sit. Sequi, maxime! Expedita, adipisci.</p>
                 </article>
                 <article>
-                    <h3>teste 2</h3>
+                    <h3>Great job</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, iure! Quibusdam, dolore adipisci voluptate inventore ipsam repellendus labore pariatur magni, eos voluptatem molestiae natus quas, quam totam dolorem omnis perspiciatis?</p>
+                </article>
+                <article>
+                    <h3>The best</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, iure! Quibusdam, dolore adipisci voluptate inventore ipsam repellendus labore pariatur magni, eos voluptatem molestiae natus quas, quam totam dolorem omnis perspiciatis?</p>
                 </article>
             </div>
         </div>
     </section>
 
-    <section id="gallery" class="white-bg section"></section>
+    <section id="gallery" class="white-bg section">
+        <div class="main-content gallery-content">
+            <h2>Gallery</h2>
+            <p>Here are some of my pics.</p>
+        </div>
+
+    </section>
 </body>
 </html>
