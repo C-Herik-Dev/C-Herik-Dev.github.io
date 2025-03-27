@@ -15,9 +15,12 @@
     <label for="close-menu" title="close menu" class="close-menu-label"></label>
     <aside class="menu white-bg">
         <div class="menu-content main-content">
-            <h1> Logo </h1>
+            <h1 onclick="getElementById('close-menu').checked = false;">
+                <a href="#home" style="color: #0a1128;">Logo </a>
+            </h1>
+
             <nav>
-                 <ul>
+                 <ul onclick="getElementById('close-menu').checked = false;">
                     <li>
                         <a href="#home">introdução</a>
                     </li>
@@ -190,5 +193,7 @@
     <footer class="footer">
         <p>Feito com <span class="heart">❤</span> por <a href="#">Carlos Silva!</a> </p>
     </footer>
+
+    <a class="back-to-top" href="#">➤</a>
 </body>
 </html>

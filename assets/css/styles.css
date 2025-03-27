@@ -338,6 +338,10 @@ form-grid textarea:focus {
     padding: 3rem;
 }
 
+.close-menu {
+    display: none;
+}
+
 @media (max-width: 800px) {
     .intro-content {
         grid-template-columns: 1fr;
@@ -381,13 +385,6 @@ form-grid textarea:focus {
         display: none;
     }
 
-    .close-menu {
-        position: fixed;
-        z-index: 2;
-        top: 0;
-        left: 0;
-    }
-
     .close-menu-label::after {
         content: '☰';
         position: fixed;
@@ -413,5 +410,25 @@ form-grid textarea:focus {
     content: '✖';
    }
 
+   .menu-spacing {
+    display: none;
+   }
 
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--white-color);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--primary-color);
+    transform: rotate(-90deg);
+    border: 0.1rem solid var(--primary-color);
 }
